@@ -6,7 +6,7 @@
   background-color: #66cc66; /* Green background color */
   color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 0px;
   position: relative;
 }
 
@@ -97,7 +97,7 @@
   background-color: #66cc66; /* Green background color */
   color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 0px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -163,7 +163,7 @@
   background-color: #66cc66; /* Green background color */
   color: white;
   border-radius: 10px;
-  padding: 12px 20px;
+  padding: 0px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -182,9 +182,9 @@
 
 .show-card-number mat-icon {
   margin-right: 5px;
-  width: 13px;
-  height: 13px;
-  font-size: 13px;
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
 }
 
 .card-logo img {
@@ -251,20 +251,24 @@
 .card-content-container {
   min-width: 100%;
   max-width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
+}
+.card-no{
+ 
+  display: flex;
+  align-items: center;
+
 }
 
 .card-content {
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   border-radius: 10px;
-  width: 80%;
 }
 
 .card-logo img {
-  width: 100px;
+  width: 80px;
 }
 
 .card-name {
@@ -313,7 +317,8 @@
   height: 12px;
   width: 12px;
   margin: 0 5px;
-  background-color: #bbb;
+  background-color: #01D167;
+  opacity: 0.2;
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
@@ -321,5 +326,31 @@
 }
 
 .dot.active {
-  background-color: #717171;
+  background-color: #01D167;
+  opacity: 1;
+  width: 20px;
+  border-radius: 35%;
+}
+@media (max-width:700px){
+.show-card-number{
+  margin-bottom: 0;
+}
+.card-no{
+  width: fit-content;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+
+}
+.container{
+  padding: 0 20px;
+}
+.card-container {
+  padding: 0;
+}
+.card-content{
+  width: 100%;
+}
 }

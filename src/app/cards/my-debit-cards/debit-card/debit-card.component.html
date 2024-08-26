@@ -1,8 +1,10 @@
 <div class="container">
   <div class="show-card-number">
+    <div class="card-no">
     <mat-icon>visibility</mat-icon>
     <span (click)="toggleCardNumberVisibility()"> {{ showFullCardNumber ? 'Hide Card Number' : 'Show Card Number' }}</span>
   </div>
+</div>
   <mat-card class="card-container">
     <div class="carousel-container">
       <div
@@ -21,7 +23,7 @@
             <div class="card-number">{{ getCardNumber(card?.number) }}</div>
             <div class="card-validity">
               <p class="validity-txt">Thru: {{ card?.validity }}</p>
-              <p class="validity-txt">{{ card?.cvv }}</p>
+              <p class="validity-txt">CVV:   {{ card?.cvv }}</p>
             </div>
             <div class="card-brand">{{ card?.brand }}</div>
           </div>

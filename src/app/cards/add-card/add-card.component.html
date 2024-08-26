@@ -1,5 +1,5 @@
-<h2 mat-dialog-title>Add Card Details</h2>
-
+<div class="dailog-outer">
+  <h2 class="title-text">Add Card Details</h2>
 <mat-dialog-content>
   <form [formGroup]="cardForm">
     <div class="card-container">
@@ -21,6 +21,9 @@
 </mat-dialog-content>
 
 <mat-dialog-actions>
-  <button mat-button (click)="onCancel()">Cancel</button>
-  <button mat-button  [disabled]="!cardForm.valid" (click)="submit()">Save</button>
+  <div class="btns-wrap">
+  <button class="cancel-btn" (click)="onCancel()">Cancel</button>
+  <button class="save-btn"  [disabled]="!cardForm.valid" (click)="submit()">Save</button>
+  </div>
 </mat-dialog-actions>
+</div>

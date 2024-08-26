@@ -1,39 +1,83 @@
-.card-container {
-  width: 300px;
-  background-color: #66cc66;
-  color: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+.dailog-outer {
+  padding: 1.2rem 1.6rem;
 
-.card-logo {
-  text-align: right;
-  margin-bottom: 20px;
-}
-
-.card-content {
-  font-family: 'Arial', sans-serif;
-  font-size: 1rem;
-
-  mat-form-field {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .card-validity {
+  .card-container {
+    width: 300px;
+    background-color: #66cc66;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
-    mat-form-field {
-      width: 48%;
+    .card-logo {
+      text-align: right;
+      margin-bottom: 20px;
+
+      img {
+        width: 70px;
+      }
+    }
+
+    .card-content {
+      font-family: 'Arial', sans-serif;
+      font-size: 1rem;
+
+      mat-form-field {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .card-validity {
+        display: flex;
+        justify-content: space-between;
+
+        mat-form-field {
+          width: 48%;
+        }
+      }
     }
   }
-}
 
-mat-dialog-actions {
-  justify-content: flex-end;
+  mat-dialog-actions {
+    justify-content: flex-end;
+
+    .btns-wrap {
+      display: flex;
+      justify-content: end;
+      gap: 12px;
+      margin-top: 1rem;
+
+      .cancel-btn {
+        padding: 10px 15px;
+        background: #ffffff;
+        border: 1px solid #EBEAED;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #222222;
+        border-radius: 4px;
+      }
+
+      .save-btn {
+        padding: 10px 15px;
+        background: #325BAF;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #ffffff;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .title-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #222222;
+  }
 }

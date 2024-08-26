@@ -31,12 +31,7 @@ gap: 20px;
   letter-spacing: 0.25px;
 
 }
-.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {  
-        color: #222222 !important;
-        font-weight: 500;
 
-
-}
 .mdc-tab-indicator .mdc-tab-indicator__content {
   border-width: 3px;
     color: rgba(35, 206, 253, 1);
@@ -48,4 +43,29 @@ app-navbar{
   .mat-mdc-nav-list .mat-mdc-list-item {
     margin-bottom: 1.2rem;
   }
+}
+@media (max-width:700px){
+  .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {  
+    color: #ffffff !important;
+    font-weight: 500;
+
+
+}
+.mat-drawer-content {
+  margin-left: 0 !important;
+}
+  .mat-mdc-tab-list {
+    padding: 0 20px !important;
+  }
+}
+@media (min-width:700px){
+  .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {  
+    color: #222222 !important;
+    font-weight: 500;
+
+
+}
+}
+button, img{
+  cursor: pointer;
 }

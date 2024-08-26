@@ -17,7 +17,7 @@ export const routes: Routes = [
       { path: 'payments', component: PaymentsComponent },
       { path: 'credit', component: CreditComponent },
       { path: 'settings', component: SettingsComponent },
-      { path: '', redirectTo: 'home', pathMatch: 'full' }, // Default child route
+      { path: '', redirectTo: 'cards', pathMatch: 'full' }, // Default child route
     ],
   },
 ];

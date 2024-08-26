@@ -119,3 +119,29 @@
   font-weight: 600;
   font-size: 14px;
 }
+@media (max-width:700px){
+  .balance-container{
+    background-color: #0C365A;
+    padding: 20px;
+    padding-top: 35px;
+    align-items: end;
+
+  }
+  .new-card-button {
+    background-color: #0C365A;
+    padding: 0;
+    color: #23CEFD;
+    margin-bottom: 2px;
+
+  }
+  .amount{
+    color: #ffffff;
+  }
+  .balance-label{
+    color: #ffffff;
+    margin-bottom: 13px;
+  }
+.icon-box:before {
+color: #23CEFD
+}
+}

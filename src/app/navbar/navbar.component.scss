@@ -64,3 +64,12 @@
 .mat-drawer.mat-drawer-side{
   height: fit-content;
 }
+@media (max-width:700px){
+  .menu-items{
+    background-color: #0C365A;
+    padding: 0px;
+  }
+  .side-container{
+    display: none !important;
+  }
+}
