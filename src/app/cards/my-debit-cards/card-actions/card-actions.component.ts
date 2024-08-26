@@ -3,11 +3,12 @@ import { MaterialModule } from '../../../shared/modules/material.module';
 import { MatDialog } from '@angular/material/dialog';
 import { FreezeCardComponent } from '../../freeze-card/freeze-card.component';
 import { Card } from '../../shared/interfaces/Cards.interface';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-card-actions',
   standalone: true,
-  imports: [MaterialModule],
+  imports: [MaterialModule,CommonModule],
   templateUrl: './card-actions.component.html',
   styleUrl: './card-actions.component.scss',
 })

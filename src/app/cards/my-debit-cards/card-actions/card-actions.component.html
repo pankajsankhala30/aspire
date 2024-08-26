@@ -6,7 +6,7 @@
         ><span class="path3"></span
       ></span>
     </button>
-      <div class="icon-txt">{{ this.cardIndexData.status ? 'Freeze card' : 'Unfreeze card' }}</div>
+    <div *ngIf="cardIndexData" class="icon-txt">{{ this.cardIndexData.status ? 'Freeze card' : 'Unfreeze card' }}</div>
   </div>
   <div class="option">
     <button mat-icon-button class="icon-btn">
