@@ -1,0 +1,52 @@
+.card-options-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e8f0fe;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+mat-icon,
+.gpay-icon {
+  font-size: 24px;
+  color: #3f51b5;
+}
+
+.icon-span {
+  font-size: 40px;
+  color: #3f51b5;
+}
+.icon-txt{
+  font-size: 12px;
+  color: #3f51b5;
+  font-weight: 500;
+  margin-top: 6px;
+  font-family: manrope !important;
+}
+.gpay-icon {
+  width: 24px;
+  height: 24px;
+}
+.icon-btn{
+  width: 40px !important;
+  height: 40px !important;
+}

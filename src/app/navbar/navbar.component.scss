@@ -1,0 +1,66 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 340px;
+  background-color: #002a4a;
+  color: white;
+}
+
+.sidenav-header {
+  padding: 20px;
+}
+
+.sidenav-logo {
+  font-size: 36px;
+  color: #4caf50;
+}
+
+.sidenav-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidenav-description {
+  font-size: 12px;
+  margin-top: 8px;
+  color: #b0bec5;
+}
+
+.mat-icon {
+  margin-right: 10px;
+}
+
+.mat-list-item {
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.mat-item-menu {
+  color: #ffffff;
+}
+.side-container {
+  padding: 30px;
+  padding-bottom: 8rem;
+}
+.icon-aspire_logo {
+  display: inline-block;
+  width: 125px;
+  height: 35px;
+}
+.nav-icon::before {
+  font-size: 20px;
+}
+.nav-item-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.menu-items {
+  padding: 35px;
+  background-color: #ffffff;
+}
+.mat-drawer.mat-drawer-side{
+  height: fit-content;
+}

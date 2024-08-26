@@ -1,0 +1,29 @@
+<div class="balance-container">
+  <div class="balance-info">
+    <span class="balance-label">Available balance</span>
+    <div class="balance-amount">
+      <div class="currency-icon">
+        <span>S$</span>
+      </div>
+      <span class="amount">3,000</span>
+    </div>
+  </div>
+  <button class="new-card-button" (click)="openAddCardDialog()">
+    <span class="icon-box"></span>
+    <span>New card</span>
+  </button>
+</div>
+
+<mat-tab-group class="tab-group">
+  <mat-tab label="My debit cards">
+    <div class="tab-content">
+      <!-- Card and Action buttons go here -->
+      <app-my-debit-cards [parentData]="cards"></app-my-debit-cards>
+    </div>
+  </mat-tab>
+  <mat-tab label="All company cards">
+    <div class="tab-content">
+      <!-- Company cards content -->
+    </div>
+  </mat-tab>
+</mat-tab-group>

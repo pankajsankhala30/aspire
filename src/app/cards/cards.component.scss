@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.balance-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-label {
+  font-size: 16px;
+  color: #757575;
+}
+
+.balance-details {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.currency-symbol {
+  margin-right: 5px;
+}
+
+.balance-amount {
+  font-weight: bold;
+  font-size: 36px;
+  color: #4caf50;
+}
+
+.new-card-button {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.new-card-button mat-icon {
+  margin-right: 5px;
+}
+
+// .tab-group {
+//   margin: 20px;
+// }
+
+.tab-content {
+  padding: 20px 0;
+  border-radius: 8px;
+}
+.balance-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; 
+  margin-bottom: 22px;
+}
+
+.balance-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-label {
+  font-size: 14px;
+  color: #666666; /* Light grey for the label */
+  margin-bottom: 5px;
+}
+
+.balance-amount {
+  display: flex;
+  align-items: center;
+}
+
+.currency-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #66cc66; /* Green background color */
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333; /* Darker grey for the amount */
+}
+
+.new-card-button {
+  display: flex;
+    align-items: center;
+    background-color: #354a8e;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    gap: 6px;
+    border: none;
+
+}
+
+.new-card-button mat-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
+  flex-grow: 1;
+  width: 120px;
+  padding: 0 !important;
+  letter-spacing: 1px !important;
+  font-weight: 600;
+  font-size: 14px;
+}

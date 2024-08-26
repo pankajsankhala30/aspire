@@ -1,0 +1,52 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" opened class="sidenav">
+    <div class="side-container">
+      <div class="sidenav-header">
+        <!-- <div class="icon-aspire_logo"></div> -->
+        <img class="aspire-logo" src="../../assets/logos/aspire_logo.svg" />
+        <p class="sidenav-description">
+          Trusted way of banking for 3,000+ SMEs and startups in Singapore
+        </p>
+      </div>
+      <mat-nav-list>
+        <mat-list-item routerLink="/dashboard/home">
+          <div class="nav-item-row">
+            <div class="nav-icon icon-Home"></div>
+            <div class="mat-item-menu">Home</div>
+          </div>
+        </mat-list-item>
+        <mat-list-item routerLink="/dashboard/cards">
+          <div class="nav-item-row">
+            <div class="nav-icon icon-Card"></div>
+            <div class="mat-item-menu">Cards</div>
+          </div>
+        </mat-list-item>
+        <mat-list-item routerLink="/dashboard/payments">
+          <div class="nav-item-row">
+            <div class="nav-icon icon-Payments"></div>
+            <div class="mat-item-menu">Payments</div>
+          </div>
+        </mat-list-item>
+        <mat-list-item routerLink="/dashboard/credit">
+          <div class="nav-item-row">
+            <div class="nav-icon icon-Credit"></div>
+            <div class="mat-item-menu">Credit</div>
+          </div>
+        </mat-list-item>
+        <mat-list-item routerLink="/dashboard/settings">
+          <div class="nav-item-row">
+            <div class="nav-icon icon-Account"></div>
+            <div class="mat-item-menu">Settings</div>
+          </div>
+        </mat-list-item>
+      </mat-nav-list>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Main content will go here -->
+    <!-- <app-main-content></app-main-content> -->
+    <div class="menu-items">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

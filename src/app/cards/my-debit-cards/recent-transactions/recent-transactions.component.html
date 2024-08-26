@@ -1,0 +1,36 @@
+<div class="recent-transactions-container mat-elevation-z1">
+  <div class="transactions-header">
+    <div class="transactions-row">
+    <span class="icon-Group-11889-1"
+      ><span class="path1"></span><span class="path2"></span
+      ><span class="path3"></span
+    ></span>
+    <h4>Recent transactions</h4>
+    </div>
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </div>
+  <div class="transaction-item" *ngFor="let transaction of transactions">
+    <div class="transaction-left">
+      <div
+        class="transaction-icon"
+        [ngStyle]="{ 'background-color': transaction.iconColor }"
+      >
+        <mat-icon>{{ transaction.icon }}</mat-icon>
+      </div>
+      <div class="transaction-details">
+        <h5>{{ transaction.title }}</h5>
+        <p>{{ transaction.date }}</p>
+        <a href="#"><img src="../../../../assets/logos/business-and-finance.svg" alt="">{{ transaction.subTitle }}</a>
+      </div>
+    </div>
+    <div
+      class="transaction-right"
+      [ngClass]="{
+        positive: transaction.amount > 0,
+        negative: transaction.amount < 0
+      }"
+    >
+      <span>{{ transaction.amount | currency : "SGD" : "symbol" }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.content-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.0784313725);
+  border: 2px solid #fcfcfc;
+}
+
+.left-content,
+.right-content {
+  width: 45%; /* Adjust width as needed */
+}

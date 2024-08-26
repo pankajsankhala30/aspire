@@ -1,0 +1,20 @@
+
+<h2 mat-dialog-title>Freeze Card</h2>
+
+<mat-dialog-content>
+  <div>
+    <div class="card-container">
+      <div class="card-logo">
+        <img src="assets/logos/aspire_logo_white.svg" alt="Card Logo" />
+      </div>
+      <div class="card-content">
+        <p>Are you sure you want to freeze this card?</p>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button  (click)="submit()">Save</button>
+</mat-dialog-actions>

@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/icomoon/style.css";
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+app-cards{
+  .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
+    flex-grow: 1;
+    width: fit-content;
+    padding: 0 5px !important;
+    letter-spacing: 1px !important;
+    font-weight: 500;
+    font-size: 14px;
+    height: fit-content;
+
+}
+.mat-mdc-tab-labels {
+width: fit-content !important;
+gap: 20px;
+}
+.mdc-tab__text-label{
+  color: #AAAAAA !important;
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+
+}
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {  
+        color: #222222 !important;
+        font-weight: 500;
+
+
+}
+.mdc-tab-indicator .mdc-tab-indicator__content {
+  border-width: 3px;
+    color: rgba(35, 206, 253, 1);
+    border-color: rgba(35, 206, 253, 1);
+
+}
+}
+app-navbar{
+  .mat-mdc-nav-list .mat-mdc-list-item {
+    margin-bottom: 1.2rem;
+  }
+}
